@@ -1,0 +1,18 @@
+<!-- <p>products works!</p>
+<h1>Products</h1>
+
+<input type="text" [(ngModel)]="filterTex" placeholder="Enter product name to filter">
+
+<ul>
+  <li *ngFor="let product of filteredProducts">
+    {{ product.name }} - {{ product.price | currency: 'USD' }}
+  </li>
+</ul> -->
+
+<input type="text" [(ngModel)]="filterText" placeholder="Enter product name to filter">
+
+<ul>
+  <li *ngFor="let product of filteredProducts()">
+    {{ product.name }} - {{ product.price | currency: 'USD' }}
+  </li>
+</ul>
